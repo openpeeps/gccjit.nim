@@ -27,6 +27,7 @@ jobs:
         with:
           nim-version: ${{ matrix.nim-version }}
           repo-token: ${{ secrets.GITHUB_TOKEN }}
+      - run: 'sudo apt-get -y install libgccjit-13-dev libgccjit0'
       - run: nimble install -Y
       - run: nim c -r ${{ env.mainfile }}.nim
       - run: nimble test
