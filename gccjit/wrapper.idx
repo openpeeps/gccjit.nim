@@ -1,0 +1,291 @@
+nimTitle	wrapper	gccjit/wrapper.html	module gccjit/wrapper		0
+nim	gcc_jit_context	gccjit/wrapper.html#gcc_jit_context	object gcc_jit_context		20
+nim	gcc_jit_result	gccjit/wrapper.html#gcc_jit_result	object gcc_jit_result		37
+nim	gcc_jit_object	gccjit/wrapper.html#gcc_jit_object	object gcc_jit_object		38
+nim	gcc_jit_location	gccjit/wrapper.html#gcc_jit_location	object gcc_jit_location		39
+nim	gcc_jit_type	gccjit/wrapper.html#gcc_jit_type	object gcc_jit_type		40
+nim	gcc_jit_field	gccjit/wrapper.html#gcc_jit_field	object gcc_jit_field		41
+nim	gcc_jit_struct	gccjit/wrapper.html#gcc_jit_struct	object gcc_jit_struct		42
+nim	gcc_jit_function_type	gccjit/wrapper.html#gcc_jit_function_type	object gcc_jit_function_type		43
+nim	gcc_jit_vector_type	gccjit/wrapper.html#gcc_jit_vector_type	object gcc_jit_vector_type		44
+nim	gcc_jit_function	gccjit/wrapper.html#gcc_jit_function	object gcc_jit_function		45
+nim	gcc_jit_block	gccjit/wrapper.html#gcc_jit_block	object gcc_jit_block		46
+nim	gcc_jit_rvalue	gccjit/wrapper.html#gcc_jit_rvalue	object gcc_jit_rvalue		60
+nim	gcc_jit_lvalue	gccjit/wrapper.html#gcc_jit_lvalue	object gcc_jit_lvalue		62
+nim	gcc_jit_param	gccjit/wrapper.html#gcc_jit_param	object gcc_jit_param		67
+nim	gcc_jit_case	gccjit/wrapper.html#gcc_jit_case	object gcc_jit_case		71
+nim	gcc_jit_extended_asm	gccjit/wrapper.html#gcc_jit_extended_asm	object gcc_jit_extended_asm		76
+nim	gcc_jit_timer	gccjit/wrapper.html#gcc_jit_timer	object gcc_jit_timer		82
+nim	gcc_jit_context_acquire	gccjit/wrapper.html#gcc_jit_context_acquire	proc gcc_jit_context_acquire(): ptr gcc_jit_context		89
+nim	gcc_jit_context_release	gccjit/wrapper.html#gcc_jit_context_release,ptr.gcc_jit_context	proc gcc_jit_context_release(ctxt: ptr gcc_jit_context)		93
+nim	GCC_JIT_STR_OPTION_PROGNAME	gccjit/wrapper.html#GCC_JIT_STR_OPTION_PROGNAME	gcc_jit_str_option.GCC_JIT_STR_OPTION_PROGNAME		99
+nim	GCC_JIT_NUM_STR_OPTIONS	gccjit/wrapper.html#GCC_JIT_NUM_STR_OPTIONS	gcc_jit_str_option.GCC_JIT_NUM_STR_OPTIONS		99
+nim	gcc_jit_str_option	gccjit/wrapper.html#gcc_jit_str_option	enum gcc_jit_str_option		99
+nim	GCC_JIT_INT_OPTION_OPTIMIZATION_LEVEL	gccjit/wrapper.html#GCC_JIT_INT_OPTION_OPTIMIZATION_LEVEL	gcc_jit_int_option.GCC_JIT_INT_OPTION_OPTIMIZATION_LEVEL		107
+nim	GCC_JIT_NUM_INT_OPTIONS	gccjit/wrapper.html#GCC_JIT_NUM_INT_OPTIONS	gcc_jit_int_option.GCC_JIT_NUM_INT_OPTIONS		107
+nim	gcc_jit_int_option	gccjit/wrapper.html#gcc_jit_int_option	enum gcc_jit_int_option		107
+nim	GCC_JIT_BOOL_OPTION_DEBUGINFO	gccjit/wrapper.html#GCC_JIT_BOOL_OPTION_DEBUGINFO	gcc_jit_bool_option.GCC_JIT_BOOL_OPTION_DEBUGINFO		119
+nim	GCC_JIT_BOOL_OPTION_DUMP_INITIAL_TREE	gccjit/wrapper.html#GCC_JIT_BOOL_OPTION_DUMP_INITIAL_TREE	gcc_jit_bool_option.GCC_JIT_BOOL_OPTION_DUMP_INITIAL_TREE		119
+nim	GCC_JIT_BOOL_OPTION_DUMP_INITIAL_GIMPLE	gccjit/wrapper.html#GCC_JIT_BOOL_OPTION_DUMP_INITIAL_GIMPLE	gcc_jit_bool_option.GCC_JIT_BOOL_OPTION_DUMP_INITIAL_GIMPLE		119
+nim	GCC_JIT_BOOL_OPTION_DUMP_GENERATED_CODE	gccjit/wrapper.html#GCC_JIT_BOOL_OPTION_DUMP_GENERATED_CODE	gcc_jit_bool_option.GCC_JIT_BOOL_OPTION_DUMP_GENERATED_CODE		119
+nim	GCC_JIT_BOOL_OPTION_DUMP_SUMMARY	gccjit/wrapper.html#GCC_JIT_BOOL_OPTION_DUMP_SUMMARY	gcc_jit_bool_option.GCC_JIT_BOOL_OPTION_DUMP_SUMMARY		119
+nim	GCC_JIT_BOOL_OPTION_DUMP_EVERYTHING	gccjit/wrapper.html#GCC_JIT_BOOL_OPTION_DUMP_EVERYTHING	gcc_jit_bool_option.GCC_JIT_BOOL_OPTION_DUMP_EVERYTHING		119
+nim	GCC_JIT_BOOL_OPTION_SELFCHECK_GC	gccjit/wrapper.html#GCC_JIT_BOOL_OPTION_SELFCHECK_GC	gcc_jit_bool_option.GCC_JIT_BOOL_OPTION_SELFCHECK_GC		119
+nim	GCC_JIT_BOOL_OPTION_KEEP_INTERMEDIATES	gccjit/wrapper.html#GCC_JIT_BOOL_OPTION_KEEP_INTERMEDIATES	gcc_jit_bool_option.GCC_JIT_BOOL_OPTION_KEEP_INTERMEDIATES		119
+nim	GCC_JIT_NUM_BOOL_OPTIONS	gccjit/wrapper.html#GCC_JIT_NUM_BOOL_OPTIONS	gcc_jit_bool_option.GCC_JIT_NUM_BOOL_OPTIONS		119
+nim	gcc_jit_bool_option	gccjit/wrapper.html#gcc_jit_bool_option	enum gcc_jit_bool_option		119
+nim	gcc_jit_context_set_str_option	gccjit/wrapper.html#gcc_jit_context_set_str_option,ptr.gcc_jit_context,gcc_jit_str_option,cstring	proc gcc_jit_context_set_str_option(ctxt: ptr gcc_jit_context;\n                               opt: gcc_jit_str_option; value: cstring)		165
+nim	gcc_jit_context_set_int_option	gccjit/wrapper.html#gcc_jit_context_set_int_option,ptr.gcc_jit_context,gcc_jit_int_option,cint	proc gcc_jit_context_set_int_option(ctxt: ptr gcc_jit_context;\n                               opt: gcc_jit_int_option; value: cint)		169
+nim	gcc_jit_context_set_bool_option	gccjit/wrapper.html#gcc_jit_context_set_bool_option,ptr.gcc_jit_context,gcc_jit_bool_option,cint	proc gcc_jit_context_set_bool_option(ctxt: ptr gcc_jit_context;\n                                opt: gcc_jit_bool_option; value: cint)		175
+nim	gcc_jit_context_set_bool_allow_unreachable_blocks	gccjit/wrapper.html#gcc_jit_context_set_bool_allow_unreachable_blocks,ptr.gcc_jit_context,cint	proc gcc_jit_context_set_bool_allow_unreachable_blocks(ctxt: ptr gcc_jit_context;\n    bool_value: cint)		192
+nim	gcc_jit_context_set_bool_print_errors_to_stderr	gccjit/wrapper.html#gcc_jit_context_set_bool_print_errors_to_stderr,ptr.gcc_jit_context,cint	proc gcc_jit_context_set_bool_print_errors_to_stderr(ctxt: ptr gcc_jit_context;\n    enabled: cint)		207
+nim	gcc_jit_context_set_bool_use_external_driver	gccjit/wrapper.html#gcc_jit_context_set_bool_use_external_driver,ptr.gcc_jit_context,cint	proc gcc_jit_context_set_bool_use_external_driver(ctxt: ptr gcc_jit_context;\n    bool_value: cint)		228
+nim	gcc_jit_context_add_command_line_option	gccjit/wrapper.html#gcc_jit_context_add_command_line_option,ptr.gcc_jit_context,cstring	proc gcc_jit_context_add_command_line_option(ctxt: ptr gcc_jit_context;\n                                        optname: cstring)		248
+nim	gcc_jit_context_add_driver_option	gccjit/wrapper.html#gcc_jit_context_add_driver_option,ptr.gcc_jit_context,cstring	proc gcc_jit_context_add_driver_option(ctxt: ptr gcc_jit_context; optname: cstring)		267
+nim	gcc_jit_context_compile	gccjit/wrapper.html#gcc_jit_context_compile,ptr.gcc_jit_context	proc gcc_jit_context_compile(ctxt: ptr gcc_jit_context): ptr gcc_jit_result		276
+nim	GCC_JIT_OUTPUT_KIND_ASSEMBLER	gccjit/wrapper.html#GCC_JIT_OUTPUT_KIND_ASSEMBLER	gcc_jit_output_kind.GCC_JIT_OUTPUT_KIND_ASSEMBLER		281
+nim	GCC_JIT_OUTPUT_KIND_OBJECT_FILE	gccjit/wrapper.html#GCC_JIT_OUTPUT_KIND_OBJECT_FILE	gcc_jit_output_kind.GCC_JIT_OUTPUT_KIND_OBJECT_FILE		281
+nim	GCC_JIT_OUTPUT_KIND_DYNAMIC_LIBRARY	gccjit/wrapper.html#GCC_JIT_OUTPUT_KIND_DYNAMIC_LIBRARY	gcc_jit_output_kind.GCC_JIT_OUTPUT_KIND_DYNAMIC_LIBRARY		281
+nim	GCC_JIT_OUTPUT_KIND_EXECUTABLE	gccjit/wrapper.html#GCC_JIT_OUTPUT_KIND_EXECUTABLE	gcc_jit_output_kind.GCC_JIT_OUTPUT_KIND_EXECUTABLE		281
+nim	gcc_jit_output_kind	gccjit/wrapper.html#gcc_jit_output_kind	enum gcc_jit_output_kind		281
+nim	gcc_jit_context_compile_to_file	gccjit/wrapper.html#gcc_jit_context_compile_to_file,ptr.gcc_jit_context,gcc_jit_output_kind,cstring	proc gcc_jit_context_compile_to_file(ctxt: ptr gcc_jit_context;\n                                output_kind: gcc_jit_output_kind;\n                                output_path: cstring)		293
+nim	gcc_jit_context_dump_to_file	gccjit/wrapper.html#gcc_jit_context_dump_to_file,ptr.gcc_jit_context,cstring,cint	proc gcc_jit_context_dump_to_file(ctxt: ptr gcc_jit_context; path: cstring;\n                             update_locations: cint)		305
+nim	gcc_jit_context_set_logfile	gccjit/wrapper.html#gcc_jit_context_set_logfile,ptr.gcc_jit_context,ptr.File,cint,cint	proc gcc_jit_context_set_logfile(ctxt: ptr gcc_jit_context; logfile: ptr File;\n                            flags: cint; verbosity: cint)		315
+nim	gcc_jit_context_get_first_error	gccjit/wrapper.html#gcc_jit_context_get_first_error,ptr.gcc_jit_context	proc gcc_jit_context_get_first_error(ctxt: ptr gcc_jit_context): cstring		325
+nim	gcc_jit_context_get_last_error	gccjit/wrapper.html#gcc_jit_context_get_last_error,ptr.gcc_jit_context	proc gcc_jit_context_get_last_error(ctxt: ptr gcc_jit_context): cstring		334
+nim	gcc_jit_result_get_code	gccjit/wrapper.html#gcc_jit_result_get_code,ptr.gcc_jit_result,cstring	proc gcc_jit_result_get_code(result: ptr gcc_jit_result; funcname: cstring): pointer		339
+nim	gcc_jit_result_get_global	gccjit/wrapper.html#gcc_jit_result_get_global,ptr.gcc_jit_result,cstring	proc gcc_jit_result_get_global(result: ptr gcc_jit_result; name: cstring): pointer		344
+nim	gcc_jit_result_release	gccjit/wrapper.html#gcc_jit_result_release,ptr.gcc_jit_result	proc gcc_jit_result_release(result: ptr gcc_jit_result)		349
+nim	gcc_jit_object_get_context	gccjit/wrapper.html#gcc_jit_object_get_context,ptr.gcc_jit_object	proc gcc_jit_object_get_context(obj: ptr gcc_jit_object): ptr gcc_jit_context		370
+nim	gcc_jit_object_get_debug_string	gccjit/wrapper.html#gcc_jit_object_get_debug_string,ptr.gcc_jit_object	proc gcc_jit_object_get_debug_string(obj: ptr gcc_jit_object): cstring		375
+nim	gcc_jit_context_new_location	gccjit/wrapper.html#gcc_jit_context_new_location,ptr.gcc_jit_context,cstring,cint,cint	proc gcc_jit_context_new_location(ctxt: ptr gcc_jit_context; filename: cstring;\n                             line: cint; column: cint): ptr gcc_jit_location		382
+nim	gcc_jit_location_as_object	gccjit/wrapper.html#gcc_jit_location_as_object,ptr.gcc_jit_location	proc gcc_jit_location_as_object(loc: ptr gcc_jit_location): ptr gcc_jit_object		386
+nim	gcc_jit_type_as_object	gccjit/wrapper.html#gcc_jit_type_as_object,ptr.gcc_jit_type	proc gcc_jit_type_as_object(type: ptr gcc_jit_type): ptr gcc_jit_object		392
+nim	GCC_JIT_TYPE_VOID	gccjit/wrapper.html#GCC_JIT_TYPE_VOID	gcc_jit_types.GCC_JIT_TYPE_VOID		396
+nim	GCC_JIT_TYPE_VOID_PTR	gccjit/wrapper.html#GCC_JIT_TYPE_VOID_PTR	gcc_jit_types.GCC_JIT_TYPE_VOID_PTR		396
+nim	GCC_JIT_TYPE_BOOL	gccjit/wrapper.html#GCC_JIT_TYPE_BOOL	gcc_jit_types.GCC_JIT_TYPE_BOOL		396
+nim	GCC_JIT_TYPE_CHAR	gccjit/wrapper.html#GCC_JIT_TYPE_CHAR	gcc_jit_types.GCC_JIT_TYPE_CHAR		396
+nim	GCC_JIT_TYPE_SIGNED_CHAR	gccjit/wrapper.html#GCC_JIT_TYPE_SIGNED_CHAR	gcc_jit_types.GCC_JIT_TYPE_SIGNED_CHAR		396
+nim	GCC_JIT_TYPE_UNSIGNED_CHAR	gccjit/wrapper.html#GCC_JIT_TYPE_UNSIGNED_CHAR	gcc_jit_types.GCC_JIT_TYPE_UNSIGNED_CHAR		396
+nim	GCC_JIT_TYPE_SHORT	gccjit/wrapper.html#GCC_JIT_TYPE_SHORT	gcc_jit_types.GCC_JIT_TYPE_SHORT		396
+nim	GCC_JIT_TYPE_UNSIGNED_SHORT	gccjit/wrapper.html#GCC_JIT_TYPE_UNSIGNED_SHORT	gcc_jit_types.GCC_JIT_TYPE_UNSIGNED_SHORT		396
+nim	GCC_JIT_TYPE_INT	gccjit/wrapper.html#GCC_JIT_TYPE_INT	gcc_jit_types.GCC_JIT_TYPE_INT		396
+nim	GCC_JIT_TYPE_UNSIGNED_INT	gccjit/wrapper.html#GCC_JIT_TYPE_UNSIGNED_INT	gcc_jit_types.GCC_JIT_TYPE_UNSIGNED_INT		396
+nim	GCC_JIT_TYPE_LONG	gccjit/wrapper.html#GCC_JIT_TYPE_LONG	gcc_jit_types.GCC_JIT_TYPE_LONG		396
+nim	GCC_JIT_TYPE_UNSIGNED_LONG	gccjit/wrapper.html#GCC_JIT_TYPE_UNSIGNED_LONG	gcc_jit_types.GCC_JIT_TYPE_UNSIGNED_LONG		396
+nim	GCC_JIT_TYPE_LONG_LONG	gccjit/wrapper.html#GCC_JIT_TYPE_LONG_LONG	gcc_jit_types.GCC_JIT_TYPE_LONG_LONG		396
+nim	GCC_JIT_TYPE_UNSIGNED_LONG_LONG	gccjit/wrapper.html#GCC_JIT_TYPE_UNSIGNED_LONG_LONG	gcc_jit_types.GCC_JIT_TYPE_UNSIGNED_LONG_LONG		396
+nim	GCC_JIT_TYPE_FLOAT	gccjit/wrapper.html#GCC_JIT_TYPE_FLOAT	gcc_jit_types.GCC_JIT_TYPE_FLOAT		396
+nim	GCC_JIT_TYPE_DOUBLE	gccjit/wrapper.html#GCC_JIT_TYPE_DOUBLE	gcc_jit_types.GCC_JIT_TYPE_DOUBLE		396
+nim	GCC_JIT_TYPE_LONG_DOUBLE	gccjit/wrapper.html#GCC_JIT_TYPE_LONG_DOUBLE	gcc_jit_types.GCC_JIT_TYPE_LONG_DOUBLE		396
+nim	GCC_JIT_TYPE_CONST_CHAR_PTR	gccjit/wrapper.html#GCC_JIT_TYPE_CONST_CHAR_PTR	gcc_jit_types.GCC_JIT_TYPE_CONST_CHAR_PTR		396
+nim	GCC_JIT_TYPE_SIZE_T	gccjit/wrapper.html#GCC_JIT_TYPE_SIZE_T	gcc_jit_types.GCC_JIT_TYPE_SIZE_T		396
+nim	GCC_JIT_TYPE_FILE_PTR	gccjit/wrapper.html#GCC_JIT_TYPE_FILE_PTR	gcc_jit_types.GCC_JIT_TYPE_FILE_PTR		396
+nim	GCC_JIT_TYPE_COMPLEX_FLOAT	gccjit/wrapper.html#GCC_JIT_TYPE_COMPLEX_FLOAT	gcc_jit_types.GCC_JIT_TYPE_COMPLEX_FLOAT		396
+nim	GCC_JIT_TYPE_COMPLEX_DOUBLE	gccjit/wrapper.html#GCC_JIT_TYPE_COMPLEX_DOUBLE	gcc_jit_types.GCC_JIT_TYPE_COMPLEX_DOUBLE		396
+nim	GCC_JIT_TYPE_COMPLEX_LONG_DOUBLE	gccjit/wrapper.html#GCC_JIT_TYPE_COMPLEX_LONG_DOUBLE	gcc_jit_types.GCC_JIT_TYPE_COMPLEX_LONG_DOUBLE		396
+nim	GCC_JIT_TYPE_UINT8_T	gccjit/wrapper.html#GCC_JIT_TYPE_UINT8_T	gcc_jit_types.GCC_JIT_TYPE_UINT8_T		396
+nim	GCC_JIT_TYPE_UINT16_T	gccjit/wrapper.html#GCC_JIT_TYPE_UINT16_T	gcc_jit_types.GCC_JIT_TYPE_UINT16_T		396
+nim	GCC_JIT_TYPE_UINT32_T	gccjit/wrapper.html#GCC_JIT_TYPE_UINT32_T	gcc_jit_types.GCC_JIT_TYPE_UINT32_T		396
+nim	GCC_JIT_TYPE_UINT64_T	gccjit/wrapper.html#GCC_JIT_TYPE_UINT64_T	gcc_jit_types.GCC_JIT_TYPE_UINT64_T		396
+nim	GCC_JIT_TYPE_UINT128_T	gccjit/wrapper.html#GCC_JIT_TYPE_UINT128_T	gcc_jit_types.GCC_JIT_TYPE_UINT128_T		396
+nim	GCC_JIT_TYPE_INT8_T	gccjit/wrapper.html#GCC_JIT_TYPE_INT8_T	gcc_jit_types.GCC_JIT_TYPE_INT8_T		396
+nim	GCC_JIT_TYPE_INT16_T	gccjit/wrapper.html#GCC_JIT_TYPE_INT16_T	gcc_jit_types.GCC_JIT_TYPE_INT16_T		396
+nim	GCC_JIT_TYPE_INT32_T	gccjit/wrapper.html#GCC_JIT_TYPE_INT32_T	gcc_jit_types.GCC_JIT_TYPE_INT32_T		396
+nim	GCC_JIT_TYPE_INT64_T	gccjit/wrapper.html#GCC_JIT_TYPE_INT64_T	gcc_jit_types.GCC_JIT_TYPE_INT64_T		396
+nim	GCC_JIT_TYPE_INT128_T	gccjit/wrapper.html#GCC_JIT_TYPE_INT128_T	gcc_jit_types.GCC_JIT_TYPE_INT128_T		396
+nim	gcc_jit_types	gccjit/wrapper.html#gcc_jit_types	enum gcc_jit_types		396
+nim	gcc_jit_context_get_type	gccjit/wrapper.html#gcc_jit_context_get_type,ptr.gcc_jit_context,gcc_jit_types	proc gcc_jit_context_get_type(ctxt: ptr gcc_jit_context; type: gcc_jit_types): ptr gcc_jit_type		425
+nim	gcc_jit_context_get_int_type	gccjit/wrapper.html#gcc_jit_context_get_int_type,ptr.gcc_jit_context,cint,cint	proc gcc_jit_context_get_int_type(ctxt: ptr gcc_jit_context; num_bytes: cint;\n                             is_signed: cint): ptr gcc_jit_type		428
+nim	gcc_jit_type_get_pointer	gccjit/wrapper.html#gcc_jit_type_get_pointer,ptr.gcc_jit_type	proc gcc_jit_type_get_pointer(type: ptr gcc_jit_type): ptr gcc_jit_type		433
+nim	gcc_jit_type_get_const	gccjit/wrapper.html#gcc_jit_type_get_const,ptr.gcc_jit_type	proc gcc_jit_type_get_const(type: ptr gcc_jit_type): ptr gcc_jit_type		436
+nim	gcc_jit_type_get_volatile	gccjit/wrapper.html#gcc_jit_type_get_volatile,ptr.gcc_jit_type	proc gcc_jit_type_get_volatile(type: ptr gcc_jit_type): ptr gcc_jit_type		439
+nim	gcc_jit_type_get_restrict	gccjit/wrapper.html#gcc_jit_type_get_restrict,ptr.gcc_jit_type	proc gcc_jit_type_get_restrict(type: ptr gcc_jit_type): ptr gcc_jit_type		445
+nim	gcc_jit_compatible_types	gccjit/wrapper.html#gcc_jit_compatible_types,ptr.gcc_jit_type,ptr.gcc_jit_type	proc gcc_jit_compatible_types(ltype: ptr gcc_jit_type; rtype: ptr gcc_jit_type): cint		451
+nim	gcc_jit_type_get_size	gccjit/wrapper.html#gcc_jit_type_get_size,ptr.gcc_jit_type	proc gcc_jit_type_get_size(type: ptr gcc_jit_type): csize_t		457
+nim	gcc_jit_context_new_array_type	gccjit/wrapper.html#gcc_jit_context_new_array_type,ptr.gcc_jit_context,ptr.gcc_jit_location,ptr.gcc_jit_type,cint	proc gcc_jit_context_new_array_type(ctxt: ptr gcc_jit_context;\n                               loc: ptr gcc_jit_location;\n                               element_type: ptr gcc_jit_type;\n                               num_elements: cint): ptr gcc_jit_type		460
+nim	gcc_jit_context_new_field	gccjit/wrapper.html#gcc_jit_context_new_field,ptr.gcc_jit_context,ptr.gcc_jit_location,ptr.gcc_jit_type,cstring	proc gcc_jit_context_new_field(ctxt: ptr gcc_jit_context; loc: ptr gcc_jit_location;\n                          type: ptr gcc_jit_type; name: cstring): ptr gcc_jit_field		467
+nim	gcc_jit_context_new_bitfield	gccjit/wrapper.html#gcc_jit_context_new_bitfield,ptr.gcc_jit_context,ptr.gcc_jit_location,ptr.gcc_jit_type,cint,cstring	proc gcc_jit_context_new_bitfield(ctxt: ptr gcc_jit_context;\n                             loc: ptr gcc_jit_location; type: ptr gcc_jit_type;\n                             width: cint; name: cstring): ptr gcc_jit_field		477
+nim	gcc_jit_field_as_object	gccjit/wrapper.html#gcc_jit_field_as_object,ptr.gcc_jit_field	proc gcc_jit_field_as_object(field: ptr gcc_jit_field): ptr gcc_jit_object		483
+nim	gcc_jit_context_new_struct_type	gccjit/wrapper.html#gcc_jit_context_new_struct_type,ptr.gcc_jit_context,ptr.gcc_jit_location,cstring,cint,ptr.ptr.gcc_jit_field	proc gcc_jit_context_new_struct_type(ctxt: ptr gcc_jit_context;\n                                loc: ptr gcc_jit_location; name: cstring;\n                                num_fields: cint; fields: ptr ptr gcc_jit_field): ptr gcc_jit_struct		486
+nim	gcc_jit_context_new_opaque_struct	gccjit/wrapper.html#gcc_jit_context_new_opaque_struct,ptr.gcc_jit_context,ptr.gcc_jit_location,cstring	proc gcc_jit_context_new_opaque_struct(ctxt: ptr gcc_jit_context;\n                                  loc: ptr gcc_jit_location; name: cstring): ptr gcc_jit_struct		492
+nim	gcc_jit_struct_as_type	gccjit/wrapper.html#gcc_jit_struct_as_type,ptr.gcc_jit_struct	proc gcc_jit_struct_as_type(struct_type: ptr gcc_jit_struct): ptr gcc_jit_type		496
+nim	gcc_jit_struct_set_fields	gccjit/wrapper.html#gcc_jit_struct_set_fields,ptr.gcc_jit_struct,ptr.gcc_jit_location,cint,ptr.ptr.gcc_jit_field	proc gcc_jit_struct_set_fields(struct_type: ptr gcc_jit_struct;\n                          loc: ptr gcc_jit_location; num_fields: cint;\n                          fields: ptr ptr gcc_jit_field)		500
+nim	gcc_jit_struct_get_field	gccjit/wrapper.html#gcc_jit_struct_get_field,ptr.gcc_jit_struct,csize_t	proc gcc_jit_struct_get_field(struct_type: ptr gcc_jit_struct; index: csize_t): ptr gcc_jit_field		505
+nim	gcc_jit_struct_get_field_count	gccjit/wrapper.html#gcc_jit_struct_get_field_count,ptr.gcc_jit_struct	proc gcc_jit_struct_get_field_count(struct_type: ptr gcc_jit_struct): csize_t		508
+nim	gcc_jit_context_new_union_type	gccjit/wrapper.html#gcc_jit_context_new_union_type,ptr.gcc_jit_context,ptr.gcc_jit_location,cstring,cint,ptr.ptr.gcc_jit_field	proc gcc_jit_context_new_union_type(ctxt: ptr gcc_jit_context;\n                               loc: ptr gcc_jit_location; name: cstring;\n                               num_fields: cint; fields: ptr ptr gcc_jit_field): ptr gcc_jit_type		511
+nim	gcc_jit_context_new_function_ptr_type	gccjit/wrapper.html#gcc_jit_context_new_function_ptr_type,ptr.gcc_jit_context,ptr.gcc_jit_location,ptr.gcc_jit_type,cint,ptr.ptr.gcc_jit_type,cint	proc gcc_jit_context_new_function_ptr_type(ctxt: ptr gcc_jit_context;\n                                      loc: ptr gcc_jit_location;\n                                      return_type: ptr gcc_jit_type;\n                                      num_params: cint;\n                                      param_types: ptr ptr gcc_jit_type;\n                                      is_variadic: cint): ptr gcc_jit_type		517
+nim	gcc_jit_context_new_param	gccjit/wrapper.html#gcc_jit_context_new_param,ptr.gcc_jit_context,ptr.gcc_jit_location,ptr.gcc_jit_type,cstring	proc gcc_jit_context_new_param(ctxt: ptr gcc_jit_context; loc: ptr gcc_jit_location;\n                          type: ptr gcc_jit_type; name: cstring): ptr gcc_jit_param		525
+nim	gcc_jit_param_as_object	gccjit/wrapper.html#gcc_jit_param_as_object,ptr.gcc_jit_param	proc gcc_jit_param_as_object(param: ptr gcc_jit_param): ptr gcc_jit_object		530
+nim	gcc_jit_param_as_lvalue	gccjit/wrapper.html#gcc_jit_param_as_lvalue,ptr.gcc_jit_param	proc gcc_jit_param_as_lvalue(param: ptr gcc_jit_param): ptr gcc_jit_lvalue		533
+nim	gcc_jit_param_as_rvalue	gccjit/wrapper.html#gcc_jit_param_as_rvalue,ptr.gcc_jit_param	proc gcc_jit_param_as_rvalue(param: ptr gcc_jit_param): ptr gcc_jit_rvalue		536
+nim	GCC_JIT_FUNCTION_EXPORTED	gccjit/wrapper.html#GCC_JIT_FUNCTION_EXPORTED	gcc_jit_function_kind.GCC_JIT_FUNCTION_EXPORTED		540
+nim	GCC_JIT_FUNCTION_INTERNAL	gccjit/wrapper.html#GCC_JIT_FUNCTION_INTERNAL	gcc_jit_function_kind.GCC_JIT_FUNCTION_INTERNAL		540
+nim	GCC_JIT_FUNCTION_IMPORTED	gccjit/wrapper.html#GCC_JIT_FUNCTION_IMPORTED	gcc_jit_function_kind.GCC_JIT_FUNCTION_IMPORTED		540
+nim	GCC_JIT_FUNCTION_ALWAYS_INLINE	gccjit/wrapper.html#GCC_JIT_FUNCTION_ALWAYS_INLINE	gcc_jit_function_kind.GCC_JIT_FUNCTION_ALWAYS_INLINE		540
+nim	gcc_jit_function_kind	gccjit/wrapper.html#gcc_jit_function_kind	enum gcc_jit_function_kind		540
+nim	GCC_JIT_TLS_MODEL_NONE	gccjit/wrapper.html#GCC_JIT_TLS_MODEL_NONE	gcc_jit_tls_model.GCC_JIT_TLS_MODEL_NONE		562
+nim	GCC_JIT_TLS_MODEL_GLOBAL_DYNAMIC	gccjit/wrapper.html#GCC_JIT_TLS_MODEL_GLOBAL_DYNAMIC	gcc_jit_tls_model.GCC_JIT_TLS_MODEL_GLOBAL_DYNAMIC		562
+nim	GCC_JIT_TLS_MODEL_LOCAL_DYNAMIC	gccjit/wrapper.html#GCC_JIT_TLS_MODEL_LOCAL_DYNAMIC	gcc_jit_tls_model.GCC_JIT_TLS_MODEL_LOCAL_DYNAMIC		562
+nim	GCC_JIT_TLS_MODEL_INITIAL_EXEC	gccjit/wrapper.html#GCC_JIT_TLS_MODEL_INITIAL_EXEC	gcc_jit_tls_model.GCC_JIT_TLS_MODEL_INITIAL_EXEC		562
+nim	GCC_JIT_TLS_MODEL_LOCAL_EXEC	gccjit/wrapper.html#GCC_JIT_TLS_MODEL_LOCAL_EXEC	gcc_jit_tls_model.GCC_JIT_TLS_MODEL_LOCAL_EXEC		562
+nim	gcc_jit_tls_model	gccjit/wrapper.html#gcc_jit_tls_model	enum gcc_jit_tls_model		562
+nim	gcc_jit_context_new_function	gccjit/wrapper.html#gcc_jit_context_new_function,ptr.gcc_jit_context,ptr.gcc_jit_location,gcc_jit_function_kind,ptr.gcc_jit_type,cstring,cint,ptr.ptr.gcc_jit_param,cint	proc gcc_jit_context_new_function(ctxt: ptr gcc_jit_context;\n                             loc: ptr gcc_jit_location;\n                             kind: gcc_jit_function_kind;\n                             return_type: ptr gcc_jit_type; name: cstring;\n                             num_params: cint; params: ptr ptr gcc_jit_param;\n                             is_variadic: cint): ptr gcc_jit_function		570
+nim	gcc_jit_context_get_builtin_function	gccjit/wrapper.html#gcc_jit_context_get_builtin_function,ptr.gcc_jit_context,cstring	proc gcc_jit_context_get_builtin_function(ctxt: ptr gcc_jit_context; name: cstring): ptr gcc_jit_function		579
+nim	gcc_jit_function_as_object	gccjit/wrapper.html#gcc_jit_function_as_object,ptr.gcc_jit_function	proc gcc_jit_function_as_object(func: ptr gcc_jit_function): ptr gcc_jit_object		582
+nim	gcc_jit_function_get_param	gccjit/wrapper.html#gcc_jit_function_get_param,ptr.gcc_jit_function,cint	proc gcc_jit_function_get_param(func: ptr gcc_jit_function; index: cint): ptr gcc_jit_param		585
+nim	gcc_jit_function_dump_to_dot	gccjit/wrapper.html#gcc_jit_function_dump_to_dot,ptr.gcc_jit_function,cstring	proc gcc_jit_function_dump_to_dot(func: ptr gcc_jit_function; path: cstring)		588
+nim	gcc_jit_function_new_block	gccjit/wrapper.html#gcc_jit_function_new_block,ptr.gcc_jit_function,cstring	proc gcc_jit_function_new_block(func: ptr gcc_jit_function; name: cstring): ptr gcc_jit_block		595
+nim	gcc_jit_block_as_object	gccjit/wrapper.html#gcc_jit_block_as_object,ptr.gcc_jit_block	proc gcc_jit_block_as_object(block: ptr gcc_jit_block): ptr gcc_jit_object		598
+nim	gcc_jit_block_get_function	gccjit/wrapper.html#gcc_jit_block_get_function,ptr.gcc_jit_block	proc gcc_jit_block_get_function(block: ptr gcc_jit_block): ptr gcc_jit_function		601
+nim	GCC_JIT_GLOBAL_EXPORTED	gccjit/wrapper.html#GCC_JIT_GLOBAL_EXPORTED	gcc_jit_global_kind.GCC_JIT_GLOBAL_EXPORTED		607
+nim	GCC_JIT_GLOBAL_INTERNAL	gccjit/wrapper.html#GCC_JIT_GLOBAL_INTERNAL	gcc_jit_global_kind.GCC_JIT_GLOBAL_INTERNAL		607
+nim	GCC_JIT_GLOBAL_IMPORTED	gccjit/wrapper.html#GCC_JIT_GLOBAL_IMPORTED	gcc_jit_global_kind.GCC_JIT_GLOBAL_IMPORTED		607
+nim	gcc_jit_global_kind	gccjit/wrapper.html#gcc_jit_global_kind	enum gcc_jit_global_kind		607
+nim	gcc_jit_context_new_global	gccjit/wrapper.html#gcc_jit_context_new_global,ptr.gcc_jit_context,ptr.gcc_jit_location,gcc_jit_global_kind,ptr.gcc_jit_type,cstring	proc gcc_jit_context_new_global(ctxt: ptr gcc_jit_context; loc: ptr gcc_jit_location;\n                           kind: gcc_jit_global_kind; type: ptr gcc_jit_type;\n                           name: cstring): ptr gcc_jit_lvalue		617
+nim	gcc_jit_context_new_struct_constructor	gccjit/wrapper.html#gcc_jit_context_new_struct_constructor,ptr.gcc_jit_context,ptr.gcc_jit_location,ptr.gcc_jit_type,csize_t,ptr.ptr.gcc_jit_field,ptr.ptr.gcc_jit_rvalue	proc gcc_jit_context_new_struct_constructor(ctxt: ptr gcc_jit_context;\n                                       loc: ptr gcc_jit_location;\n                                       type: ptr gcc_jit_type;\n                                       num_values: csize_t;\n                                       fields: ptr ptr gcc_jit_field;\n                                       values: ptr ptr gcc_jit_rvalue): ptr gcc_jit_rvalue		667
+nim	gcc_jit_context_new_union_constructor	gccjit/wrapper.html#gcc_jit_context_new_union_constructor,ptr.gcc_jit_context,ptr.gcc_jit_location,ptr.gcc_jit_type,ptr.gcc_jit_field,ptr.gcc_jit_rvalue	proc gcc_jit_context_new_union_constructor(ctxt: ptr gcc_jit_context;\n                                      loc: ptr gcc_jit_location;\n                                      type: ptr gcc_jit_type;\n                                      field: ptr gcc_jit_field;\n                                      value: ptr gcc_jit_rvalue): ptr gcc_jit_rvalue		702
+nim	gcc_jit_context_new_array_constructor	gccjit/wrapper.html#gcc_jit_context_new_array_constructor,ptr.gcc_jit_context,ptr.gcc_jit_location,ptr.gcc_jit_type,csize_t,ptr.ptr.gcc_jit_rvalue	proc gcc_jit_context_new_array_constructor(ctxt: ptr gcc_jit_context;\n                                      loc: ptr gcc_jit_location;\n                                      type: ptr gcc_jit_type;\n                                      num_values: csize_t;\n                                      values: ptr ptr gcc_jit_rvalue): ptr gcc_jit_rvalue		734
+nim	gcc_jit_global_set_initializer_rvalue	gccjit/wrapper.html#gcc_jit_global_set_initializer_rvalue,ptr.gcc_jit_lvalue,ptr.gcc_jit_rvalue	proc gcc_jit_global_set_initializer_rvalue(global: ptr gcc_jit_lvalue;\n                                      init_value: ptr gcc_jit_rvalue): ptr gcc_jit_lvalue		755
+nim	gcc_jit_global_set_initializer	gccjit/wrapper.html#gcc_jit_global_set_initializer,ptr.gcc_jit_lvalue,pointer,csize_t	proc gcc_jit_global_set_initializer(global: ptr gcc_jit_lvalue; blob: pointer;\n                               num_bytes: csize_t): ptr gcc_jit_lvalue		765
+nim	gcc_jit_lvalue_as_object	gccjit/wrapper.html#gcc_jit_lvalue_as_object,ptr.gcc_jit_lvalue	proc gcc_jit_lvalue_as_object(lvalue: ptr gcc_jit_lvalue): ptr gcc_jit_object		769
+nim	gcc_jit_lvalue_as_rvalue	gccjit/wrapper.html#gcc_jit_lvalue_as_rvalue,ptr.gcc_jit_lvalue	proc gcc_jit_lvalue_as_rvalue(lvalue: ptr gcc_jit_lvalue): ptr gcc_jit_rvalue		770
+nim	gcc_jit_rvalue_as_object	gccjit/wrapper.html#gcc_jit_rvalue_as_object,ptr.gcc_jit_rvalue	proc gcc_jit_rvalue_as_object(rvalue: ptr gcc_jit_rvalue): ptr gcc_jit_object		771
+nim	gcc_jit_rvalue_get_type	gccjit/wrapper.html#gcc_jit_rvalue_get_type,ptr.gcc_jit_rvalue	proc gcc_jit_rvalue_get_type(rvalue: ptr gcc_jit_rvalue): ptr gcc_jit_type		772
+nim	gcc_jit_context_new_rvalue_from_int	gccjit/wrapper.html#gcc_jit_context_new_rvalue_from_int,ptr.gcc_jit_context,ptr.gcc_jit_type,cint	proc gcc_jit_context_new_rvalue_from_int(ctxt: ptr gcc_jit_context;\n                                    numeric_type: ptr gcc_jit_type; value: cint): ptr gcc_jit_rvalue		775
+nim	gcc_jit_context_new_rvalue_from_long	gccjit/wrapper.html#gcc_jit_context_new_rvalue_from_long,ptr.gcc_jit_context,ptr.gcc_jit_type,clong	proc gcc_jit_context_new_rvalue_from_long(ctxt: ptr gcc_jit_context;\n                                     numeric_type: ptr gcc_jit_type;\n                                     value: clong): ptr gcc_jit_rvalue		777
+nim	gcc_jit_context_zero	gccjit/wrapper.html#gcc_jit_context_zero,ptr.gcc_jit_context,ptr.gcc_jit_type	proc gcc_jit_context_zero(ctxt: ptr gcc_jit_context; numeric_type: ptr gcc_jit_type): ptr gcc_jit_rvalue		779
+nim	gcc_jit_context_one	gccjit/wrapper.html#gcc_jit_context_one,ptr.gcc_jit_context,ptr.gcc_jit_type	proc gcc_jit_context_one(ctxt: ptr gcc_jit_context; numeric_type: ptr gcc_jit_type): ptr gcc_jit_rvalue		780
+nim	gcc_jit_context_new_rvalue_from_double	gccjit/wrapper.html#gcc_jit_context_new_rvalue_from_double,ptr.gcc_jit_context,ptr.gcc_jit_type,cdouble	proc gcc_jit_context_new_rvalue_from_double(ctxt: ptr gcc_jit_context;\n                                       numeric_type: ptr gcc_jit_type;\n                                       value: cdouble): ptr gcc_jit_rvalue		783
+nim	gcc_jit_context_new_rvalue_from_ptr	gccjit/wrapper.html#gcc_jit_context_new_rvalue_from_ptr,ptr.gcc_jit_context,ptr.gcc_jit_type,pointer	proc gcc_jit_context_new_rvalue_from_ptr(ctxt: ptr gcc_jit_context;\n                                    pointer_type: ptr gcc_jit_type;\n                                    value: pointer): ptr gcc_jit_rvalue		787
+nim	gcc_jit_context_null	gccjit/wrapper.html#gcc_jit_context_null,ptr.gcc_jit_context,ptr.gcc_jit_type	proc gcc_jit_context_null(ctxt: ptr gcc_jit_context; pointer_type: ptr gcc_jit_type): ptr gcc_jit_rvalue		789
+nim	gcc_jit_context_new_sizeof	gccjit/wrapper.html#gcc_jit_context_new_sizeof,ptr.gcc_jit_context,ptr.gcc_jit_type	proc gcc_jit_context_new_sizeof(ctxt: ptr gcc_jit_context; type: ptr gcc_jit_type): ptr gcc_jit_rvalue		796
+nim	gcc_jit_context_new_string_literal	gccjit/wrapper.html#gcc_jit_context_new_string_literal,ptr.gcc_jit_context,cstring	proc gcc_jit_context_new_string_literal(ctxt: ptr gcc_jit_context; value: cstring): ptr gcc_jit_rvalue		799
+nim	GCC_JIT_UNARY_OP_MINUS	gccjit/wrapper.html#GCC_JIT_UNARY_OP_MINUS	gcc_jit_unary_op.GCC_JIT_UNARY_OP_MINUS		801
+nim	GCC_JIT_UNARY_OP_BITWISE_NEGATE	gccjit/wrapper.html#GCC_JIT_UNARY_OP_BITWISE_NEGATE	gcc_jit_unary_op.GCC_JIT_UNARY_OP_BITWISE_NEGATE		801
+nim	GCC_JIT_UNARY_OP_LOGICAL_NEGATE	gccjit/wrapper.html#GCC_JIT_UNARY_OP_LOGICAL_NEGATE	gcc_jit_unary_op.GCC_JIT_UNARY_OP_LOGICAL_NEGATE		801
+nim	GCC_JIT_UNARY_OP_ABS	gccjit/wrapper.html#GCC_JIT_UNARY_OP_ABS	gcc_jit_unary_op.GCC_JIT_UNARY_OP_ABS		801
+nim	gcc_jit_unary_op	gccjit/wrapper.html#gcc_jit_unary_op	enum gcc_jit_unary_op		801
+nim	gcc_jit_context_new_unary_op	gccjit/wrapper.html#gcc_jit_context_new_unary_op,ptr.gcc_jit_context,ptr.gcc_jit_location,gcc_jit_unary_op,ptr.gcc_jit_type,ptr.gcc_jit_rvalue	proc gcc_jit_context_new_unary_op(ctxt: ptr gcc_jit_context;\n                             loc: ptr gcc_jit_location; op: gcc_jit_unary_op;\n                             result_type: ptr gcc_jit_type;\n                             rvalue: ptr gcc_jit_rvalue): ptr gcc_jit_rvalue		817
+nim	GCC_JIT_BINARY_OP_PLUS	gccjit/wrapper.html#GCC_JIT_BINARY_OP_PLUS	gcc_jit_binary_op.GCC_JIT_BINARY_OP_PLUS		822
+nim	GCC_JIT_BINARY_OP_MINUS	gccjit/wrapper.html#GCC_JIT_BINARY_OP_MINUS	gcc_jit_binary_op.GCC_JIT_BINARY_OP_MINUS		822
+nim	GCC_JIT_BINARY_OP_MULT	gccjit/wrapper.html#GCC_JIT_BINARY_OP_MULT	gcc_jit_binary_op.GCC_JIT_BINARY_OP_MULT		822
+nim	GCC_JIT_BINARY_OP_DIVIDE	gccjit/wrapper.html#GCC_JIT_BINARY_OP_DIVIDE	gcc_jit_binary_op.GCC_JIT_BINARY_OP_DIVIDE		822
+nim	GCC_JIT_BINARY_OP_MODULO	gccjit/wrapper.html#GCC_JIT_BINARY_OP_MODULO	gcc_jit_binary_op.GCC_JIT_BINARY_OP_MODULO		822
+nim	GCC_JIT_BINARY_OP_BITWISE_AND	gccjit/wrapper.html#GCC_JIT_BINARY_OP_BITWISE_AND	gcc_jit_binary_op.GCC_JIT_BINARY_OP_BITWISE_AND		822
+nim	GCC_JIT_BINARY_OP_BITWISE_XOR	gccjit/wrapper.html#GCC_JIT_BINARY_OP_BITWISE_XOR	gcc_jit_binary_op.GCC_JIT_BINARY_OP_BITWISE_XOR		822
+nim	GCC_JIT_BINARY_OP_BITWISE_OR	gccjit/wrapper.html#GCC_JIT_BINARY_OP_BITWISE_OR	gcc_jit_binary_op.GCC_JIT_BINARY_OP_BITWISE_OR		822
+nim	GCC_JIT_BINARY_OP_LOGICAL_AND	gccjit/wrapper.html#GCC_JIT_BINARY_OP_LOGICAL_AND	gcc_jit_binary_op.GCC_JIT_BINARY_OP_LOGICAL_AND		822
+nim	GCC_JIT_BINARY_OP_LOGICAL_OR	gccjit/wrapper.html#GCC_JIT_BINARY_OP_LOGICAL_OR	gcc_jit_binary_op.GCC_JIT_BINARY_OP_LOGICAL_OR		822
+nim	GCC_JIT_BINARY_OP_LSHIFT	gccjit/wrapper.html#GCC_JIT_BINARY_OP_LSHIFT	gcc_jit_binary_op.GCC_JIT_BINARY_OP_LSHIFT		822
+nim	GCC_JIT_BINARY_OP_RSHIFT	gccjit/wrapper.html#GCC_JIT_BINARY_OP_RSHIFT	gcc_jit_binary_op.GCC_JIT_BINARY_OP_RSHIFT		822
+nim	gcc_jit_binary_op	gccjit/wrapper.html#gcc_jit_binary_op	enum gcc_jit_binary_op		822
+nim	gcc_jit_context_new_binary_op	gccjit/wrapper.html#gcc_jit_context_new_binary_op,ptr.gcc_jit_context,ptr.gcc_jit_location,gcc_jit_binary_op,ptr.gcc_jit_type,ptr.gcc_jit_rvalue,ptr.gcc_jit_rvalue	proc gcc_jit_context_new_binary_op(ctxt: ptr gcc_jit_context;\n                              loc: ptr gcc_jit_location; op: gcc_jit_binary_op;\n                              result_type: ptr gcc_jit_type;\n                              a: ptr gcc_jit_rvalue; b: ptr gcc_jit_rvalue): ptr gcc_jit_rvalue		865
+nim	GCC_JIT_COMPARISON_EQ	gccjit/wrapper.html#GCC_JIT_COMPARISON_EQ	gcc_jit_comparison.GCC_JIT_COMPARISON_EQ		874
+nim	GCC_JIT_COMPARISON_NE	gccjit/wrapper.html#GCC_JIT_COMPARISON_NE	gcc_jit_comparison.GCC_JIT_COMPARISON_NE		874
+nim	GCC_JIT_COMPARISON_LT	gccjit/wrapper.html#GCC_JIT_COMPARISON_LT	gcc_jit_comparison.GCC_JIT_COMPARISON_LT		874
+nim	GCC_JIT_COMPARISON_LE	gccjit/wrapper.html#GCC_JIT_COMPARISON_LE	gcc_jit_comparison.GCC_JIT_COMPARISON_LE		874
+nim	GCC_JIT_COMPARISON_GT	gccjit/wrapper.html#GCC_JIT_COMPARISON_GT	gcc_jit_comparison.GCC_JIT_COMPARISON_GT		874
+nim	GCC_JIT_COMPARISON_GE	gccjit/wrapper.html#GCC_JIT_COMPARISON_GE	gcc_jit_comparison.GCC_JIT_COMPARISON_GE		874
+nim	gcc_jit_comparison	gccjit/wrapper.html#gcc_jit_comparison	enum gcc_jit_comparison		874
+nim	gcc_jit_context_new_comparison	gccjit/wrapper.html#gcc_jit_context_new_comparison,ptr.gcc_jit_context,ptr.gcc_jit_location,gcc_jit_comparison,ptr.gcc_jit_rvalue,ptr.gcc_jit_rvalue	proc gcc_jit_context_new_comparison(ctxt: ptr gcc_jit_context;\n                               loc: ptr gcc_jit_location;\n                               op: gcc_jit_comparison; a: ptr gcc_jit_rvalue;\n                               b: ptr gcc_jit_rvalue): ptr gcc_jit_rvalue		883
+nim	gcc_jit_context_new_call	gccjit/wrapper.html#gcc_jit_context_new_call,ptr.gcc_jit_context,ptr.gcc_jit_location,ptr.gcc_jit_function,cint,ptr.ptr.gcc_jit_rvalue	proc gcc_jit_context_new_call(ctxt: ptr gcc_jit_context; loc: ptr gcc_jit_location;\n                         func: ptr gcc_jit_function; numargs: cint;\n                         args: ptr ptr gcc_jit_rvalue): ptr gcc_jit_rvalue		890
+nim	gcc_jit_context_new_call_through_ptr	gccjit/wrapper.html#gcc_jit_context_new_call_through_ptr,ptr.gcc_jit_context,ptr.gcc_jit_location,ptr.gcc_jit_rvalue,cint,UncheckedArray[ptr.gcc_jit_rvalue]	proc gcc_jit_context_new_call_through_ptr(ctxt: ptr gcc_jit_context;\n                                     loc: ptr gcc_jit_location;\n                                     fn_ptr: ptr gcc_jit_rvalue; numargs: cint;\n                                     args: UncheckedArray[ptr gcc_jit_rvalue]): ptr gcc_jit_rvalue		895
+nim	gcc_jit_context_new_cast	gccjit/wrapper.html#gcc_jit_context_new_cast,ptr.gcc_jit_context,ptr.gcc_jit_location,ptr.gcc_jit_rvalue,ptr.gcc_jit_type	proc gcc_jit_context_new_cast(ctxt: ptr gcc_jit_context; loc: ptr gcc_jit_location;\n                         rvalue: ptr gcc_jit_rvalue; type: ptr gcc_jit_type): ptr gcc_jit_rvalue		904
+nim	gcc_jit_context_new_bitcast	gccjit/wrapper.html#gcc_jit_context_new_bitcast,ptr.gcc_jit_context,ptr.gcc_jit_location,ptr.gcc_jit_rvalue,ptr.gcc_jit_type	proc gcc_jit_context_new_bitcast(ctxt: ptr gcc_jit_context;\n                            loc: ptr gcc_jit_location;\n                            rvalue: ptr gcc_jit_rvalue; type: ptr gcc_jit_type): ptr gcc_jit_rvalue		914
+nim	gcc_jit_lvalue_set_alignment	gccjit/wrapper.html#gcc_jit_lvalue_set_alignment,ptr.gcc_jit_lvalue,cuint	proc gcc_jit_lvalue_set_alignment(lvalue: ptr gcc_jit_lvalue; bytes: cuint)		924
+nim	gcc_jit_lvalue_get_alignment	gccjit/wrapper.html#gcc_jit_lvalue_get_alignment,ptr.gcc_jit_lvalue	proc gcc_jit_lvalue_get_alignment(lvalue: ptr gcc_jit_lvalue): cuint		931
+nim	gcc_jit_context_new_array_access	gccjit/wrapper.html#gcc_jit_context_new_array_access,ptr.gcc_jit_context,ptr.gcc_jit_location,ptr.gcc_jit_rvalue,ptr.gcc_jit_rvalue	proc gcc_jit_context_new_array_access(ctxt: ptr gcc_jit_context;\n                                 loc: ptr gcc_jit_location;\n                                 ptr: ptr gcc_jit_rvalue;\n                                 index: ptr gcc_jit_rvalue): ptr gcc_jit_lvalue		932
+nim	gcc_jit_lvalue_access_field	gccjit/wrapper.html#gcc_jit_lvalue_access_field,ptr.gcc_jit_lvalue,ptr.gcc_jit_location,ptr.gcc_jit_field	proc gcc_jit_lvalue_access_field(struct_or_union: ptr gcc_jit_lvalue;\n                            loc: ptr gcc_jit_location; field: ptr gcc_jit_field): ptr gcc_jit_lvalue		941
+nim	gcc_jit_rvalue_access_field	gccjit/wrapper.html#gcc_jit_rvalue_access_field,ptr.gcc_jit_rvalue,ptr.gcc_jit_location,ptr.gcc_jit_field	proc gcc_jit_rvalue_access_field(struct_or_union: ptr gcc_jit_rvalue;\n                            loc: ptr gcc_jit_location; field: ptr gcc_jit_field): ptr gcc_jit_rvalue		948
+nim	gcc_jit_rvalue_dereference_field	gccjit/wrapper.html#gcc_jit_rvalue_dereference_field,ptr.gcc_jit_rvalue,ptr.gcc_jit_location,ptr.gcc_jit_field	proc gcc_jit_rvalue_dereference_field(ptr: ptr gcc_jit_rvalue;\n                                 loc: ptr gcc_jit_location;\n                                 field: ptr gcc_jit_field): ptr gcc_jit_lvalue		955
+nim	gcc_jit_rvalue_dereference	gccjit/wrapper.html#gcc_jit_rvalue_dereference,ptr.gcc_jit_rvalue,ptr.gcc_jit_location	proc gcc_jit_rvalue_dereference(rvalue: ptr gcc_jit_rvalue; loc: ptr gcc_jit_location): ptr gcc_jit_lvalue		962
+nim	gcc_jit_lvalue_get_address	gccjit/wrapper.html#gcc_jit_lvalue_get_address,ptr.gcc_jit_lvalue,ptr.gcc_jit_location	proc gcc_jit_lvalue_get_address(lvalue: ptr gcc_jit_lvalue; loc: ptr gcc_jit_location): ptr gcc_jit_rvalue		968
+nim	gcc_jit_lvalue_set_tls_model	gccjit/wrapper.html#gcc_jit_lvalue_set_tls_model,ptr.gcc_jit_lvalue,gcc_jit_tls_model	proc gcc_jit_lvalue_set_tls_model(lvalue: ptr gcc_jit_lvalue;\n                             model: gcc_jit_tls_model)		976
+nim	gcc_jit_lvalue_set_link_section	gccjit/wrapper.html#gcc_jit_lvalue_set_link_section,ptr.gcc_jit_lvalue,cstring	proc gcc_jit_lvalue_set_link_section(lvalue: ptr gcc_jit_lvalue;\n                                section_name: cstring)		987
+nim	gcc_jit_lvalue_set_register_name	gccjit/wrapper.html#gcc_jit_lvalue_set_register_name,ptr.gcc_jit_lvalue,cstring	proc gcc_jit_lvalue_set_register_name(lvalue: ptr gcc_jit_lvalue; reg_name: cstring)		996
+nim	gcc_jit_function_new_local	gccjit/wrapper.html#gcc_jit_function_new_local,ptr.gcc_jit_function,ptr.gcc_jit_location,ptr.gcc_jit_type,cstring	proc gcc_jit_function_new_local(func: ptr gcc_jit_function;\n                           loc: ptr gcc_jit_location; type: ptr gcc_jit_type;\n                           name: cstring): ptr gcc_jit_lvalue		997
+nim	gcc_jit_block_add_eval	gccjit/wrapper.html#gcc_jit_block_add_eval,ptr.gcc_jit_block,ptr.gcc_jit_location,ptr.gcc_jit_rvalue	proc gcc_jit_block_add_eval(block: ptr gcc_jit_block; loc: ptr gcc_jit_location;\n                       rvalue: ptr gcc_jit_rvalue)		1011
+nim	gcc_jit_block_add_assignment	gccjit/wrapper.html#gcc_jit_block_add_assignment,ptr.gcc_jit_block,ptr.gcc_jit_location,ptr.gcc_jit_lvalue,ptr.gcc_jit_rvalue	proc gcc_jit_block_add_assignment(block: ptr gcc_jit_block;\n                             loc: ptr gcc_jit_location;\n                             lvalue: ptr gcc_jit_lvalue;\n                             rvalue: ptr gcc_jit_rvalue)		1021
+nim	gcc_jit_block_add_assignment_op	gccjit/wrapper.html#gcc_jit_block_add_assignment_op,ptr.gcc_jit_block,ptr.gcc_jit_location,ptr.gcc_jit_lvalue,gcc_jit_binary_op,ptr.gcc_jit_rvalue	proc gcc_jit_block_add_assignment_op(block: ptr gcc_jit_block;\n                                loc: ptr gcc_jit_location;\n                                lvalue: ptr gcc_jit_lvalue;\n                                op: gcc_jit_binary_op;\n                                rvalue: ptr gcc_jit_rvalue)		1035
+nim	gcc_jit_block_add_comment	gccjit/wrapper.html#gcc_jit_block_add_comment,ptr.gcc_jit_block,ptr.gcc_jit_location,cstring	proc gcc_jit_block_add_comment(block: ptr gcc_jit_block; loc: ptr gcc_jit_location;\n                          text: cstring)		1049
+nim	gcc_jit_block_end_with_conditional	gccjit/wrapper.html#gcc_jit_block_end_with_conditional,ptr.gcc_jit_block,ptr.gcc_jit_location,ptr.gcc_jit_rvalue,ptr.gcc_jit_block,ptr.gcc_jit_block	proc gcc_jit_block_end_with_conditional(block: ptr gcc_jit_block;\n                                   loc: ptr gcc_jit_location;\n                                   boolval: ptr gcc_jit_rvalue;\n                                   on_true: ptr gcc_jit_block;\n                                   on_false: ptr gcc_jit_block)		1063
+nim	gcc_jit_block_end_with_jump	gccjit/wrapper.html#gcc_jit_block_end_with_jump,ptr.gcc_jit_block,ptr.gcc_jit_location,ptr.gcc_jit_block	proc gcc_jit_block_end_with_jump(block: ptr gcc_jit_block; loc: ptr gcc_jit_location;\n                            target: ptr gcc_jit_block)		1075
+nim	gcc_jit_block_end_with_return	gccjit/wrapper.html#gcc_jit_block_end_with_return,ptr.gcc_jit_block,ptr.gcc_jit_location,ptr.gcc_jit_rvalue	proc gcc_jit_block_end_with_return(block: ptr gcc_jit_block;\n                              loc: ptr gcc_jit_location;\n                              rvalue: ptr gcc_jit_rvalue)		1085
+nim	gcc_jit_block_end_with_void_return	gccjit/wrapper.html#gcc_jit_block_end_with_void_return,ptr.gcc_jit_block,ptr.gcc_jit_location	proc gcc_jit_block_end_with_void_return(block: ptr gcc_jit_block;\n                                   loc: ptr gcc_jit_location)		1096
+nim	gcc_jit_context_new_case	gccjit/wrapper.html#gcc_jit_context_new_case,ptr.gcc_jit_context,ptr.gcc_jit_rvalue,ptr.gcc_jit_rvalue,ptr.gcc_jit_block	proc gcc_jit_context_new_case(ctxt: ptr gcc_jit_context;\n                         min_value: ptr gcc_jit_rvalue;\n                         max_value: ptr gcc_jit_rvalue;\n                         dest_block: ptr gcc_jit_block): ptr gcc_jit_case		1106
+nim	gcc_jit_case_as_object	gccjit/wrapper.html#gcc_jit_case_as_object,ptr.gcc_jit_case	proc gcc_jit_case_as_object(case: ptr gcc_jit_case): ptr gcc_jit_object		1117
+nim	gcc_jit_block_end_with_switch	gccjit/wrapper.html#gcc_jit_block_end_with_switch,ptr.gcc_jit_block,ptr.gcc_jit_location,ptr.gcc_jit_rvalue,ptr.gcc_jit_block,cint,ptr.ptr.gcc_jit_case	proc gcc_jit_block_end_with_switch(block: ptr gcc_jit_block;\n                              loc: ptr gcc_jit_location;\n                              expr: ptr gcc_jit_rvalue;\n                              default_block: ptr gcc_jit_block; num_cases: cint;\n                              cases: ptr ptr gcc_jit_case)		1155
+nim	gcc_jit_context_new_child_context	gccjit/wrapper.html#gcc_jit_context_new_child_context,ptr.gcc_jit_context	proc gcc_jit_context_new_child_context(parent_ctxt: ptr gcc_jit_context): ptr gcc_jit_context		1196
+nim	gcc_jit_context_dump_reproducer_to_file	gccjit/wrapper.html#gcc_jit_context_dump_reproducer_to_file,ptr.gcc_jit_context,cstring	proc gcc_jit_context_dump_reproducer_to_file(ctxt: ptr gcc_jit_context; path: cstring)		1214
+nim	gcc_jit_context_enable_dump	gccjit/wrapper.html#gcc_jit_context_enable_dump,ptr.gcc_jit_context,cstring,cstringArray	proc gcc_jit_context_enable_dump(ctxt: ptr gcc_jit_context; dumpname: cstring;\n                            out_ptr: cstringArray)		1242
+nim	gcc_jit_timer_new	gccjit/wrapper.html#gcc_jit_timer_new	proc gcc_jit_timer_new(): ptr gcc_jit_timer		1260
+nim	gcc_jit_timer_release	gccjit/wrapper.html#gcc_jit_timer_release,ptr.gcc_jit_timer	proc gcc_jit_timer_release(timer: ptr gcc_jit_timer)		1268
+nim	gcc_jit_context_set_timer	gccjit/wrapper.html#gcc_jit_context_set_timer,ptr.gcc_jit_context,ptr.gcc_jit_timer	proc gcc_jit_context_set_timer(ctxt: ptr gcc_jit_context; timer: ptr gcc_jit_timer)		1276
+nim	gcc_jit_context_get_timer	gccjit/wrapper.html#gcc_jit_context_get_timer,ptr.gcc_jit_context	proc gcc_jit_context_get_timer(ctxt: ptr gcc_jit_context): ptr gcc_jit_timer		1284
+nim	gcc_jit_timer_push	gccjit/wrapper.html#gcc_jit_timer_push,ptr.gcc_jit_timer,cstring	proc gcc_jit_timer_push(timer: ptr gcc_jit_timer; item_name: cstring)		1292
+nim	gcc_jit_timer_pop	gccjit/wrapper.html#gcc_jit_timer_pop,ptr.gcc_jit_timer,cstring	proc gcc_jit_timer_pop(timer: ptr gcc_jit_timer; item_name: cstring)		1300
+nim	gcc_jit_timer_print	gccjit/wrapper.html#gcc_jit_timer_print,ptr.gcc_jit_timer,ptr.File	proc gcc_jit_timer_print(timer: ptr gcc_jit_timer; f_out: ptr File)		1309
+nim	gcc_jit_rvalue_set_bool_require_tail_call	gccjit/wrapper.html#gcc_jit_rvalue_set_bool_require_tail_call,ptr.gcc_jit_rvalue,cint	proc gcc_jit_rvalue_set_bool_require_tail_call(call: ptr gcc_jit_rvalue;\n    require_tail_call: cint)		1317
+nim	gcc_jit_type_get_aligned	gccjit/wrapper.html#gcc_jit_type_get_aligned,ptr.gcc_jit_type,csize_t	proc gcc_jit_type_get_aligned(type: ptr gcc_jit_type; alignment_in_bytes: csize_t): ptr gcc_jit_type		1330
+nim	gcc_jit_type_get_vector	gccjit/wrapper.html#gcc_jit_type_get_vector,ptr.gcc_jit_type,csize_t	proc gcc_jit_type_get_vector(type: ptr gcc_jit_type; num_units: csize_t): ptr gcc_jit_type		1342
+nim	gcc_jit_function_get_address	gccjit/wrapper.html#gcc_jit_function_get_address,ptr.gcc_jit_function,ptr.gcc_jit_location	proc gcc_jit_function_get_address(fn: ptr gcc_jit_function; loc: ptr gcc_jit_location): ptr gcc_jit_rvalue		1351
+nim	gcc_jit_context_new_rvalue_from_vector	gccjit/wrapper.html#gcc_jit_context_new_rvalue_from_vector,ptr.gcc_jit_context,ptr.gcc_jit_location,ptr.gcc_jit_type,csize_t,ptr.ptr.gcc_jit_rvalue	proc gcc_jit_context_new_rvalue_from_vector(ctxt: ptr gcc_jit_context;\n                                       loc: ptr gcc_jit_location;\n                                       vec_type: ptr gcc_jit_type;\n                                       num_elements: csize_t;\n                                       elements: ptr ptr gcc_jit_rvalue): ptr gcc_jit_rvalue		1362
+nim	gcc_jit_version_major	gccjit/wrapper.html#gcc_jit_version_major	proc gcc_jit_version_major(): cint		1373
+nim	gcc_jit_version_minor	gccjit/wrapper.html#gcc_jit_version_minor	proc gcc_jit_version_minor(): cint		1374
+nim	gcc_jit_version_patchlevel	gccjit/wrapper.html#gcc_jit_version_patchlevel	proc gcc_jit_version_patchlevel(): cint		1375
+nim	gcc_jit_block_add_extended_asm	gccjit/wrapper.html#gcc_jit_block_add_extended_asm,ptr.gcc_jit_block,ptr.gcc_jit_location,cstring	proc gcc_jit_block_add_extended_asm(block: ptr gcc_jit_block;\n                               loc: ptr gcc_jit_location; asm_template: cstring): ptr gcc_jit_extended_asm		1395
+nim	gcc_jit_block_end_with_extended_asm_goto	gccjit/wrapper.html#gcc_jit_block_end_with_extended_asm_goto,ptr.gcc_jit_block,ptr.gcc_jit_location,cstring,cint,ptr.ptr.gcc_jit_block,ptr.gcc_jit_block	proc gcc_jit_block_end_with_extended_asm_goto(block: ptr gcc_jit_block;\n    loc: ptr gcc_jit_location; asm_template: cstring; num_goto_blocks: cint;\n    goto_blocks: ptr ptr gcc_jit_block; fallthrough_block: ptr gcc_jit_block): ptr gcc_jit_extended_asm		1403
+nim	gcc_jit_extended_asm_as_object	gccjit/wrapper.html#gcc_jit_extended_asm_as_object,ptr.gcc_jit_extended_asm	proc gcc_jit_extended_asm_as_object(ext_asm: ptr gcc_jit_extended_asm): ptr gcc_jit_object		1408
+nim	gcc_jit_extended_asm_set_volatile_flag	gccjit/wrapper.html#gcc_jit_extended_asm_set_volatile_flag,ptr.gcc_jit_extended_asm,cint	proc gcc_jit_extended_asm_set_volatile_flag(ext_asm: ptr gcc_jit_extended_asm;\n                                       flag: cint)		1412
+nim	gcc_jit_extended_asm_set_inline_flag	gccjit/wrapper.html#gcc_jit_extended_asm_set_inline_flag,ptr.gcc_jit_extended_asm,cint	proc gcc_jit_extended_asm_set_inline_flag(ext_asm: ptr gcc_jit_extended_asm;\n                                     flag: cint)		1417
+nim	gcc_jit_extended_asm_add_output_operand	gccjit/wrapper.html#gcc_jit_extended_asm_add_output_operand,ptr.gcc_jit_extended_asm,cstring,cstring,ptr.gcc_jit_lvalue	proc gcc_jit_extended_asm_add_output_operand(ext_asm: ptr gcc_jit_extended_asm;\n                                        asm_symbolic_name: cstring;\n                                        constraint: cstring;\n                                        dest: ptr gcc_jit_lvalue)		1425
+nim	gcc_jit_extended_asm_add_input_operand	gccjit/wrapper.html#gcc_jit_extended_asm_add_input_operand,ptr.gcc_jit_extended_asm,cstring,cstring,ptr.gcc_jit_rvalue	proc gcc_jit_extended_asm_add_input_operand(ext_asm: ptr gcc_jit_extended_asm;\n                                       asm_symbolic_name: cstring;\n                                       constraint: cstring;\n                                       src: ptr gcc_jit_rvalue)		1431
+nim	gcc_jit_extended_asm_add_clobber	gccjit/wrapper.html#gcc_jit_extended_asm_add_clobber,ptr.gcc_jit_extended_asm,cstring	proc gcc_jit_extended_asm_add_clobber(ext_asm: ptr gcc_jit_extended_asm;\n                                 victim: cstring)		1436
+nim	gcc_jit_context_add_top_level_asm	gccjit/wrapper.html#gcc_jit_context_add_top_level_asm,ptr.gcc_jit_context,ptr.gcc_jit_location,cstring	proc gcc_jit_context_add_top_level_asm(ctxt: ptr gcc_jit_context;\n                                  loc: ptr gcc_jit_location; asm_stmts: cstring)		1441
+nim	gcc_jit_function_get_return_type	gccjit/wrapper.html#gcc_jit_function_get_return_type,ptr.gcc_jit_function	proc gcc_jit_function_get_return_type(func: ptr gcc_jit_function): ptr gcc_jit_type		1453
+nim	gcc_jit_function_get_param_count	gccjit/wrapper.html#gcc_jit_function_get_param_count,ptr.gcc_jit_function	proc gcc_jit_function_get_param_count(func: ptr gcc_jit_function): csize_t		1456
+nim	gcc_jit_type_dyncast_array	gccjit/wrapper.html#gcc_jit_type_dyncast_array,ptr.gcc_jit_type	proc gcc_jit_type_dyncast_array(type: ptr gcc_jit_type): ptr gcc_jit_type		1459
+nim	gcc_jit_type_is_bool	gccjit/wrapper.html#gcc_jit_type_is_bool,ptr.gcc_jit_type	proc gcc_jit_type_is_bool(type: ptr gcc_jit_type): cint		1462
+nim	gcc_jit_type_dyncast_function_ptr_type	gccjit/wrapper.html#gcc_jit_type_dyncast_function_ptr_type,ptr.gcc_jit_type	proc gcc_jit_type_dyncast_function_ptr_type(type: ptr gcc_jit_type): ptr gcc_jit_function_type		1465
+nim	gcc_jit_function_type_get_return_type	gccjit/wrapper.html#gcc_jit_function_type_get_return_type,ptr.gcc_jit_function_type	proc gcc_jit_function_type_get_return_type(function_type: ptr gcc_jit_function_type): ptr gcc_jit_type		1468
+nim	gcc_jit_function_type_get_param_count	gccjit/wrapper.html#gcc_jit_function_type_get_param_count,ptr.gcc_jit_function_type	proc gcc_jit_function_type_get_param_count(function_type: ptr gcc_jit_function_type): csize_t		1472
+nim	gcc_jit_function_type_get_param_type	gccjit/wrapper.html#gcc_jit_function_type_get_param_type,ptr.gcc_jit_function_type,csize_t	proc gcc_jit_function_type_get_param_type(function_type: ptr gcc_jit_function_type;\n                                     index: csize_t): ptr gcc_jit_type		1476
+nim	gcc_jit_type_is_integral	gccjit/wrapper.html#gcc_jit_type_is_integral,ptr.gcc_jit_type	proc gcc_jit_type_is_integral(type: ptr gcc_jit_type): cint		1480
+nim	gcc_jit_type_is_pointer	gccjit/wrapper.html#gcc_jit_type_is_pointer,ptr.gcc_jit_type	proc gcc_jit_type_is_pointer(type: ptr gcc_jit_type): ptr gcc_jit_type		1484
+nim	gcc_jit_type_dyncast_vector	gccjit/wrapper.html#gcc_jit_type_dyncast_vector,ptr.gcc_jit_type	proc gcc_jit_type_dyncast_vector(type: ptr gcc_jit_type): ptr gcc_jit_vector_type		1487
+nim	gcc_jit_type_is_struct	gccjit/wrapper.html#gcc_jit_type_is_struct,ptr.gcc_jit_type	proc gcc_jit_type_is_struct(type: ptr gcc_jit_type): ptr gcc_jit_struct		1490
+nim	gcc_jit_vector_type_get_num_units	gccjit/wrapper.html#gcc_jit_vector_type_get_num_units,ptr.gcc_jit_vector_type	proc gcc_jit_vector_type_get_num_units(vector_type: ptr gcc_jit_vector_type): csize_t		1493
+nim	gcc_jit_vector_type_get_element_type	gccjit/wrapper.html#gcc_jit_vector_type_get_element_type,ptr.gcc_jit_vector_type	proc gcc_jit_vector_type_get_element_type(vector_type: ptr gcc_jit_vector_type): ptr gcc_jit_type		1496
+nim	gcc_jit_type_unqualified	gccjit/wrapper.html#gcc_jit_type_unqualified,ptr.gcc_jit_type	proc gcc_jit_type_unqualified(type: ptr gcc_jit_type): ptr gcc_jit_type		1500
+nim	GCC_JIT_FN_ATTRIBUTE_ALIAS	gccjit/wrapper.html#GCC_JIT_FN_ATTRIBUTE_ALIAS	gcc_jit_fn_attribute.GCC_JIT_FN_ATTRIBUTE_ALIAS		1504
+nim	GCC_JIT_FN_ATTRIBUTE_ALWAYS_INLINE	gccjit/wrapper.html#GCC_JIT_FN_ATTRIBUTE_ALWAYS_INLINE	gcc_jit_fn_attribute.GCC_JIT_FN_ATTRIBUTE_ALWAYS_INLINE		1504
+nim	GCC_JIT_FN_ATTRIBUTE_INLINE	gccjit/wrapper.html#GCC_JIT_FN_ATTRIBUTE_INLINE	gcc_jit_fn_attribute.GCC_JIT_FN_ATTRIBUTE_INLINE		1504
+nim	GCC_JIT_FN_ATTRIBUTE_NOINLINE	gccjit/wrapper.html#GCC_JIT_FN_ATTRIBUTE_NOINLINE	gcc_jit_fn_attribute.GCC_JIT_FN_ATTRIBUTE_NOINLINE		1504
+nim	GCC_JIT_FN_ATTRIBUTE_TARGET	gccjit/wrapper.html#GCC_JIT_FN_ATTRIBUTE_TARGET	gcc_jit_fn_attribute.GCC_JIT_FN_ATTRIBUTE_TARGET		1504
+nim	GCC_JIT_FN_ATTRIBUTE_USED	gccjit/wrapper.html#GCC_JIT_FN_ATTRIBUTE_USED	gcc_jit_fn_attribute.GCC_JIT_FN_ATTRIBUTE_USED		1504
+nim	GCC_JIT_FN_ATTRIBUTE_VISIBILITY	gccjit/wrapper.html#GCC_JIT_FN_ATTRIBUTE_VISIBILITY	gcc_jit_fn_attribute.GCC_JIT_FN_ATTRIBUTE_VISIBILITY		1504
+nim	GCC_JIT_FN_ATTRIBUTE_COLD	gccjit/wrapper.html#GCC_JIT_FN_ATTRIBUTE_COLD	gcc_jit_fn_attribute.GCC_JIT_FN_ATTRIBUTE_COLD		1504
+nim	GCC_JIT_FN_ATTRIBUTE_RETURNS_TWICE	gccjit/wrapper.html#GCC_JIT_FN_ATTRIBUTE_RETURNS_TWICE	gcc_jit_fn_attribute.GCC_JIT_FN_ATTRIBUTE_RETURNS_TWICE		1504
+nim	GCC_JIT_FN_ATTRIBUTE_PURE	gccjit/wrapper.html#GCC_JIT_FN_ATTRIBUTE_PURE	gcc_jit_fn_attribute.GCC_JIT_FN_ATTRIBUTE_PURE		1504
+nim	GCC_JIT_FN_ATTRIBUTE_CONST	gccjit/wrapper.html#GCC_JIT_FN_ATTRIBUTE_CONST	gcc_jit_fn_attribute.GCC_JIT_FN_ATTRIBUTE_CONST		1504
+nim	GCC_JIT_FN_ATTRIBUTE_WEAK	gccjit/wrapper.html#GCC_JIT_FN_ATTRIBUTE_WEAK	gcc_jit_fn_attribute.GCC_JIT_FN_ATTRIBUTE_WEAK		1504
+nim	GCC_JIT_FN_ATTRIBUTE_NONNULL	gccjit/wrapper.html#GCC_JIT_FN_ATTRIBUTE_NONNULL	gcc_jit_fn_attribute.GCC_JIT_FN_ATTRIBUTE_NONNULL		1504
+nim	GCC_JIT_FN_ATTRIBUTE_MAX	gccjit/wrapper.html#GCC_JIT_FN_ATTRIBUTE_MAX	gcc_jit_fn_attribute.GCC_JIT_FN_ATTRIBUTE_MAX		1504
+nim	gcc_jit_fn_attribute	gccjit/wrapper.html#gcc_jit_fn_attribute	enum gcc_jit_fn_attribute		1504
+nim	gcc_jit_function_add_attribute	gccjit/wrapper.html#gcc_jit_function_add_attribute,ptr.gcc_jit_function,gcc_jit_fn_attribute	proc gcc_jit_function_add_attribute(func: ptr gcc_jit_function;\n                               attribute: gcc_jit_fn_attribute)		1516
+nim	gcc_jit_function_add_string_attribute	gccjit/wrapper.html#gcc_jit_function_add_string_attribute,ptr.gcc_jit_function,gcc_jit_fn_attribute,cstring	proc gcc_jit_function_add_string_attribute(func: ptr gcc_jit_function;\n                                      attribute: gcc_jit_fn_attribute;\n                                      value: cstring)		1518
+nim	gcc_jit_function_add_integer_array_attribute	gccjit/wrapper.html#gcc_jit_function_add_integer_array_attribute,ptr.gcc_jit_function,gcc_jit_fn_attribute,ptr.cint,csize_t	proc gcc_jit_function_add_integer_array_attribute(func: ptr gcc_jit_function;\n    attribute: gcc_jit_fn_attribute; value: ptr cint; length: csize_t)		1520
+nim	GCC_JIT_VARIABLE_ATTRIBUTE_VISIBILITY	gccjit/wrapper.html#GCC_JIT_VARIABLE_ATTRIBUTE_VISIBILITY	gcc_jit_variable_attribute.GCC_JIT_VARIABLE_ATTRIBUTE_VISIBILITY		1525
+nim	GCC_JIT_VARIABLE_ATTRIBUTE_MAX	gccjit/wrapper.html#GCC_JIT_VARIABLE_ATTRIBUTE_MAX	gcc_jit_variable_attribute.GCC_JIT_VARIABLE_ATTRIBUTE_MAX		1525
+nim	gcc_jit_variable_attribute	gccjit/wrapper.html#gcc_jit_variable_attribute	enum gcc_jit_variable_attribute		1525
+nim	gcc_jit_lvalue_add_string_attribute	gccjit/wrapper.html#gcc_jit_lvalue_add_string_attribute,ptr.gcc_jit_lvalue,gcc_jit_variable_attribute,cstring	proc gcc_jit_lvalue_add_string_attribute(variable: ptr gcc_jit_lvalue;\n                                    attribute: gcc_jit_variable_attribute;\n                                    value: cstring)		1532
+heading	Debugging information.	gccjit/wrapper.html#debugging-informationdot	 Debugging information.		0
+heading	Types.	gccjit/wrapper.html#typesdot	 Types.		0
+heading	Constructing functions.	gccjit/wrapper.html#constructing-functionsdot	 Constructing functions.		0
+heading	lvalues, rvalues and expressions.	gccjit/wrapper.html#lvalues-rvalues-and-expressionsdot	 lvalues, rvalues and expressions.		0
+heading	Statement-creation.	gccjit/wrapper.html#statementminuscreationdot	 Statement-creation.		0
+heading	Nested contexts.	gccjit/wrapper.html#nested-contextsdot	 Nested contexts.		0
+heading	Implementation support.	gccjit/wrapper.html#implementation-supportdot	 Implementation support.		0
+heading	Timing support.	gccjit/wrapper.html#timing-supportdot	 Timing support.		0
+heading	Asm support.	gccjit/wrapper.html#asm-supportdot	 Asm support.		0
