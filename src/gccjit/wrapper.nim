@@ -3,7 +3,7 @@
 #
 # (c) 2025 George Lemon | GPLv3 License
 #          Made by Humans from OpenPeeps
-#          https://github.com/openpeeps/libdatachannel-nim
+#          https://github.com/openpeeps/gccjit.nim
 
 {.passL:"-L/usr/local/lib -lgccjit".}
 
