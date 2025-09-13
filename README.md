@@ -1,5 +1,4 @@
 <p align="center">
-  <img src="https://github.com/openpeeps/PKG/blob/main/.github/logo.png" width="90px"><br>
   👑 Nim bindings for <a href="https://gcc.gnu.org/wiki/JIT">libgccjit</a>
 </p>
 
