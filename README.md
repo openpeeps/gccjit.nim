@@ -1,5 +1,4 @@
 <p align="center">
-  <img src="https://github.com/openpeeps/PKG/blob/main/.github/logo.png" width="90px"><br>
   👑 Nim bindings for <a href="https://gcc.gnu.org/wiki/JIT">libgccjit</a>
 </p>
 
@@ -23,7 +22,6 @@
 - 🐛 Found a bug? [Create a new Issue](https://github.com/openpeeps/gccjit.nim/issues)
 - 👋 Wanna help? [Fork it!](https://github.com/openpeeps/gccjit.nim/fork)
 - 😎 [Get €20 in cloud credits from Hetzner](https://hetzner.cloud/?ref=Hm0mYGM9NxZ4)
-- 🥰 [Donate via PayPal address](https://www.paypal.com/donate/?hosted_button_id=RJK3ZTDWPL55C)
 
 ### 🎩 License
 GPLv3 license. [Made by Humans from OpenPeeps](https://github.com/openpeeps).<br>
