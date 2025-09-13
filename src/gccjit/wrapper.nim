@@ -278,11 +278,15 @@ proc gcc_jit_context_compile*(ctxt: ptr gcc_jit_context): ptr gcc_jit_result
 ## gcc_jit_context_compile_to_file.
 
 type
-  gcc_jit_output_kind* = enum   ##  Compile the context to an assembler file.
-    GCC_JIT_OUTPUT_KIND_ASSEMBLER, ##  Compile the context to an object file.
-    GCC_JIT_OUTPUT_KIND_OBJECT_FILE, ##  Compile the context to a dynamic library.
-    GCC_JIT_OUTPUT_KIND_DYNAMIC_LIBRARY, ##  Compile the context to an executable.
+  gcc_jit_output_kind* = enum
+    GCC_JIT_OUTPUT_KIND_ASSEMBLER,
+      ##  Compile the context to an assembler file.
+    GCC_JIT_OUTPUT_KIND_OBJECT_FILE,
+      ##  Compile the context to an object file.
+    GCC_JIT_OUTPUT_KIND_DYNAMIC_LIBRARY,
+      ##  Compile the context to a dynamic library.
     GCC_JIT_OUTPUT_KIND_EXECUTABLE
+      ##  Compile the context to an executable.
 
 
 ##  Compile the context to a file of the given kind.
